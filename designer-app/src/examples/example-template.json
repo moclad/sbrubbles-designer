@@ -1,0 +1,128 @@
+{
+  "reportProperties": {
+    "title": "Sample Invoice Report",
+    "author": "Report Designer",
+    "paperSize": "Letter",
+    "orientation": "portrait",
+    "margins": {
+      "top": 36,
+      "right": 36,
+      "bottom": 36,
+      "left": 36
+    }
+  },
+  "regions": [
+    {
+      "name": "header",
+      "height": 100
+    },
+    {
+      "name": "body",
+      "height": 600
+    },
+    {
+      "name": "footer",
+      "height": 80
+    }
+  ],
+  "items": [
+    {
+      "id": "header-title",
+      "pluginId": "textbox",
+      "x": 50,
+      "y": 30,
+      "region": "header",
+      "properties": {
+        "text": "INVOICE",
+        "fontSize": 24,
+        "fontFamily": "Arial",
+        "fontWeight": "bold",
+        "textAlign": "center",
+        "color": "#000000",
+        "backgroundColor": "transparent",
+        "width": 400,
+        "height": 40,
+        "padding": 5
+      }
+    },
+    {
+      "id": "body-customer-field",
+      "pluginId": "singlefield",
+      "x": 50,
+      "y": 50,
+      "region": "body",
+      "properties": {
+        "label": "Customer:",
+        "value": "John Doe",
+        "dataField": "customer.name",
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "labelColor": "#000000",
+        "valueColor": "#333333",
+        "width": 300,
+        "height": 25,
+        "labelWidth": 100
+      }
+    },
+    {
+      "id": "body-invoice-field",
+      "pluginId": "singlefield",
+      "x": 50,
+      "y": 85,
+      "region": "body",
+      "properties": {
+        "label": "Invoice #:",
+        "value": "INV-12345",
+        "dataField": "invoice.number",
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "labelColor": "#000000",
+        "valueColor": "#333333",
+        "width": 300,
+        "height": 25,
+        "labelWidth": 100
+      }
+    },
+    {
+      "id": "body-table",
+      "pluginId": "table",
+      "x": 50,
+      "y": 140,
+      "region": "body",
+      "properties": {
+        "columns": 4,
+        "rows": 5,
+        "headerRow": true,
+        "fontSize": 11,
+        "fontFamily": "Arial",
+        "headerColor": "#e0e0e0",
+        "borderColor": "#cccccc",
+        "textColor": "#000000",
+        "width": 500,
+        "height": 200,
+        "cellPadding": 5
+      }
+    },
+    {
+      "id": "footer-text",
+      "pluginId": "textbox",
+      "x": 50,
+      "y": 30,
+      "region": "footer",
+      "properties": {
+        "text": "Thank you for your business!",
+        "fontSize": 10,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "textAlign": "center",
+        "color": "#666666",
+        "backgroundColor": "transparent",
+        "width": 500,
+        "height": 20,
+        "padding": 0
+      }
+    }
+  ]
+}

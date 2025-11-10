@@ -1,0 +1,158 @@
+{
+  "plugins": [
+    {
+      "id": "textbox",
+      "displayName": "Text Box",
+      "icon": "Type",
+      "defaultProperties": {
+        "text": "Sample Text",
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "fontStyle": "normal",
+        "textAlign": "left",
+        "color": "#000000",
+        "backgroundColor": "transparent",
+        "width": 150,
+        "height": 30,
+        "padding": 5
+      },
+      "propertyTypes": {
+        "text": { "type": "text", "label": "Text" },
+        "fontSize": { "type": "number", "label": "Font Size", "min": 8, "max": 72 },
+        "fontFamily": { "type": "select", "label": "Font Family", "options": ["Arial", "Times New Roman", "Courier New", "Georgia", "Verdana"] },
+        "fontWeight": { "type": "select", "label": "Font Weight", "options": ["normal", "bold"] },
+        "fontStyle": { "type": "select", "label": "Font Style", "options": ["normal", "italic"] },
+        "textAlign": { "type": "select", "label": "Text Align", "options": ["left", "center", "right"] },
+        "color": { "type": "color", "label": "Text Color" },
+        "backgroundColor": { "type": "color", "label": "Background Color" },
+        "width": { "type": "number", "label": "Width", "min": 10, "max": 1000 },
+        "height": { "type": "number", "label": "Height", "min": 10, "max": 1000 },
+        "padding": { "type": "number", "label": "Padding", "min": 0, "max": 50 }
+      }
+    },
+    {
+      "id": "singlefield",
+      "displayName": "Single Field",
+      "icon": "Tag",
+      "defaultProperties": {
+        "label": "Field:",
+        "value": "Value",
+        "dataField": "",
+        "fontSize": 12,
+        "fontFamily": "Arial",
+        "fontWeight": "normal",
+        "labelColor": "#000000",
+        "valueColor": "#333333",
+        "width": 200,
+        "height": 30,
+        "labelWidth": 80
+      },
+      "propertyTypes": {
+        "label": { "type": "text", "label": "Label" },
+        "value": { "type": "text", "label": "Value" },
+        "dataField": { "type": "dataField", "label": "Data Field" },
+        "fontSize": { "type": "number", "label": "Font Size", "min": 8, "max": 72 },
+        "fontFamily": { "type": "select", "label": "Font Family", "options": ["Arial", "Times New Roman", "Courier New", "Georgia", "Verdana"] },
+        "fontWeight": { "type": "select", "label": "Font Weight", "options": ["normal", "bold"] },
+        "labelColor": { "type": "color", "label": "Label Color" },
+        "valueColor": { "type": "color", "label": "Value Color" },
+        "width": { "type": "number", "label": "Width", "min": 10, "max": 1000 },
+        "height": { "type": "number", "label": "Height", "min": 10, "max": 1000 },
+        "labelWidth": { "type": "number", "label": "Label Width", "min": 10, "max": 500 }
+      }
+    },
+    {
+      "id": "table",
+      "displayName": "Table",
+      "icon": "Table",
+      "defaultProperties": {
+        "columns": 3,
+        "rows": 3,
+        "headerRow": true,
+        "fontSize": 11,
+        "fontFamily": "Arial",
+        "headerColor": "#f0f0f0",
+        "borderColor": "#cccccc",
+        "textColor": "#000000",
+        "width": 400,
+        "height": 150,
+        "cellPadding": 5
+      },
+      "propertyTypes": {
+        "columns": { "type": "number", "label": "Columns", "min": 1, "max": 20 },
+        "rows": { "type": "number", "label": "Rows", "min": 1, "max": 50 },
+        "headerRow": { "type": "boolean", "label": "Header Row" },
+        "fontSize": { "type": "number", "label": "Font Size", "min": 8, "max": 72 },
+        "fontFamily": { "type": "select", "label": "Font Family", "options": ["Arial", "Times New Roman", "Courier New", "Georgia", "Verdana"] },
+        "headerColor": { "type": "color", "label": "Header Color" },
+        "borderColor": { "type": "color", "label": "Border Color" },
+        "textColor": { "type": "color", "label": "Text Color" },
+        "width": { "type": "number", "label": "Width", "min": 100, "max": 1000 },
+        "height": { "type": "number", "label": "Height", "min": 50, "max": 1000 },
+        "cellPadding": { "type": "number", "label": "Cell Padding", "min": 0, "max": 20 }
+      }
+    },
+    {
+      "id": "image",
+      "displayName": "Image",
+      "icon": "Image",
+      "defaultProperties": {
+        "src": "",
+        "alt": "Image",
+        "width": 200,
+        "height": 150,
+        "objectFit": "contain"
+      },
+      "propertyTypes": {
+        "src": { "type": "text", "label": "Image URL" },
+        "alt": { "type": "text", "label": "Alt Text" },
+        "width": { "type": "number", "label": "Width", "min": 10, "max": 1000 },
+        "height": { "type": "number", "label": "Height", "min": 10, "max": 1000 },
+        "objectFit": { "type": "select", "label": "Object Fit", "options": ["contain", "cover", "fill", "none"] }
+      }
+    },
+    {
+      "id": "matrix",
+      "displayName": "Matrix",
+      "icon": "Grid3x3",
+      "defaultProperties": {
+        "rowGroups": 2,
+        "columnGroups": 2,
+        "fontSize": 11,
+        "fontFamily": "Arial",
+        "borderColor": "#cccccc",
+        "textColor": "#000000",
+        "width": 400,
+        "height": 200
+      },
+      "propertyTypes": {
+        "rowGroups": { "type": "number", "label": "Row Groups", "min": 1, "max": 10 },
+        "columnGroups": { "type": "number", "label": "Column Groups", "min": 1, "max": 10 },
+        "fontSize": { "type": "number", "label": "Font Size", "min": 8, "max": 72 },
+        "fontFamily": { "type": "select", "label": "Font Family", "options": ["Arial", "Times New Roman", "Courier New", "Georgia", "Verdana"] },
+        "borderColor": { "type": "color", "label": "Border Color" },
+        "textColor": { "type": "color", "label": "Text Color" },
+        "width": { "type": "number", "label": "Width", "min": 100, "max": 1000 },
+        "height": { "type": "number", "label": "Height", "min": 100, "max": 1000 }
+      }
+    },
+    {
+      "id": "qrcode",
+      "displayName": "QR Code",
+      "icon": "QrCode",
+      "defaultProperties": {
+        "value": "https://example.com",
+        "size": 150,
+        "bgColor": "#ffffff",
+        "fgColor": "#000000"
+      },
+      "propertyTypes": {
+        "value": { "type": "text", "label": "QR Value" },
+        "size": { "type": "number", "label": "Size", "min": 50, "max": 500 },
+        "bgColor": { "type": "color", "label": "Background Color" },
+        "fgColor": { "type": "color", "label": "Foreground Color" }
+      }
+    }
+  ]
+}
